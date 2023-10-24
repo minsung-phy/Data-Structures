@@ -14,7 +14,7 @@ typedef struct {
 
 int is_empty(QueueType *q)
 {
-	return (q->front == q->rear == 0);
+	return (q->front == 0 && q->rear == 0);
 }
 
 void enqueue(QueueType *q, element item)
