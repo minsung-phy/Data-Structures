@@ -91,8 +91,8 @@ void leftRotation(treePointer* parent, int* unbalanced)
 				(*parent)->bf = child->bf = 0;
 				break;
 			case -1:
-				(*parent)->bf = 1;
-				child->bf = 0;
+				(*parent)->bf = 0;
+				child->bf = 1;
 				break;
 		}
 		*parent = grandChild;
